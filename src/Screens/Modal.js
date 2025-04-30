@@ -30,7 +30,12 @@ const Modal = ({ navigation }) => {
     setInputValue(text);
     const numericValue = parseFloat(text);
     if (!isNaN(numericValue)) {
-      const calculatedTotal = (numericValue / 1000) * priceModal;
+      let calculatedTotal;
+      if (sellTypeModal === 'Peso') {
+        calculatedTotal = (numericValue / 1000) * priceModal;
+      } else {
+        calculatedTotal = numericValue * priceModal;
+      }
       setTotalPrice(calculatedTotal.toFixed(2));
     } else {
       setTotalPrice(null);

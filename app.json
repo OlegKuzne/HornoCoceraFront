@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.raspu_lv.snack3a865ee24ccc48aebce784e9bb25f3e2"
     },
     "web": {
       "favicon": "./assets/favicon.png"

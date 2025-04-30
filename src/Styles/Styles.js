@@ -17,9 +17,9 @@ export default StyleSheet.create({
     flex: 1,
   },
   sidebar: {
-    width: 135,
+    width: 120,
     alignItems: 'center',
-    justifyContent: 'space-evenly',
+    marginTop: 20,
   },
   buttonHeader: {
     marginLeft: 50,
@@ -38,6 +38,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     paddingHorizontal: 10,
+    marginTop: 20,
   },
   selectedSidebarButton: {
     backgroundColor: '#1E88E5',
@@ -59,7 +60,7 @@ export default StyleSheet.create({
     backgroundColor: '#FF6347',
     padding: 10,
     borderRadius: 5,
-    marginBottom: 20,
+    marginBottom: 80,
   },
   paginationText: {
     color: 'white',
@@ -74,6 +75,7 @@ export default StyleSheet.create({
     borderColor: '#FFFFFF20',
     padding: 10,
     margin: 35,
+    height: 630,
   },
   priceListFlatListContainer: {
     flex: 1,
