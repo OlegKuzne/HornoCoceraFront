@@ -48,15 +48,17 @@ const Modal = ({ navigation }) => {
       const existingProductIndex = listPrices.findIndex(item => item.name === textModal);
 
       if (existingProductIndex !== -1) {
-        // Si el producto ya está en la lista, sumamos cantidad y actualizamos precio
         const updatedList = [...listPrices];
         updatedList[existingProductIndex].quantity += numericValue;
-        updatedList[existingProductIndex].totalPrice = 
-          (updatedList[existingProductIndex].quantity * priceModal).toFixed(2);
-
+        if (sellTypeModal === 'Peso') {
+          updatedList[existingProductIndex].totalPrice = 
+            ((updatedList[existingProductIndex].quantity / 1000) * priceModal).toFixed(2);
+        } else {
+          updatedList[existingProductIndex].totalPrice = 
+            (updatedList[existingProductIndex].quantity * priceModal).toFixed(2);
+        }
         setListPrices(updatedList);
       } else {
-        // Si no está en la lista, lo añadimos como nuevo
         const newEntry = {
           name: textModal,
           quantity: numericValue,

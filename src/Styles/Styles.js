@@ -100,7 +100,7 @@ export default StyleSheet.create({
   },
   finalizeButtonContainer: {
     position: 'absolute',
-    bottom: 10, // Lo coloca al final del contenedor
+    bottom: 10,
     left: 10,
     right: 10,
     alignItems: 'center',
@@ -224,7 +224,7 @@ export default StyleSheet.create({
   modalInput: {
     width: '25%',
     height: 60,
-    backgroundColor: '#FFF5EE', // Color crema
+    backgroundColor: '#FFF5EE',
     borderRadius: 10,
     paddingHorizontal: 15,
     fontSize: 26,
